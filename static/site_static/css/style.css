@@ -1955,5 +1955,7 @@ form label {
     font-size: 26px;
   }
 }
-
+.meal_img{
+  width: 100% !important;
+}
 /*# sourceMappingURL=style.css.map */

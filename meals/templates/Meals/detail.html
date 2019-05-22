@@ -1,14 +1,23 @@
-<h1> Meal Detail </h1>
 
+{% extends 'base.html' %}
+{% load static %}
 
+{% block body %}
+	
 
-<h2>{{meal_detail}}</h2>
+	<div class="gtco-section">
+		<div class="gtco-container">
+            <img class = "meal_img" src="{{meal_detail.image.url}}" alt="">
+            <h2>{{meal_detail}}</h2>
+            <p>{{meal_detail.description}}</p>
 
-<h3>{{meal_detail.description}}</h3>
-<h3>{{meal_detail.people}}</h3>
-<h3>{{meal_detail.price}}</h3>
-<h3>{{meal_detail.preparation_time}}</h3>
+            <p>For :  {{meal_detail.people}} People</p>
+            <p>Preparation time : {{meal_detail.preparation_time}} Minutes</p>
+            <p>Price : {{meal_detail.price}} $ </p>
+		</div>
+	</div>
+	
+	
 
-
-<img src="{{meal_detail.image.url}}" alt="">
+	{% endblock body %}
 

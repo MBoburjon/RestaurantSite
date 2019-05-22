@@ -1,15 +1,4 @@
-
-{% extends 'base.html' %}
-{% load static %}
-
-{% block body %}
-	
-
-	<div class="gtco-section">
-		<div class="gtco-container">
-	
-			<div class="row">
-				{% for meal in meal_list %}
+{% for meal in meal_list %}
 					<div class="col-lg-4 col-md-4 col-sm-6">
 						<a href="{% static 'site_static/images/pilov.jpeg' %}" class="fh5co-card-item image-popup">
 							<figure>
@@ -24,11 +13,3 @@
 						</a>
 					</div>
 				{% endfor %}
-			</div>
-		</div>
-	</div>
-
-	
-
-	{% endblock body %}
-

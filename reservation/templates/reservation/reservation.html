@@ -1,3 +1,133 @@
+<style>
+  /*==================
+RESERVATION SECTION
+====================*/
+#mu-reservation{
+	background-color: #222;
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+	.mu-reservation-area{
+		display: inline;
+		float: left;
+		width: 100%;
+		.mu-title{
+			h2{
+				color: #fff;
+			}
+		}
+		.mu-reservation-content{
+			display: inline;
+			float: left;
+			margin-top: 20px;
+			padding: 0 100px;
+			width: 100%;			
+			h3{
+				color: #fff;
+				display: inline-block;
+				padding-bottom: 10px;
+				font-weight: bold;
+			}
+			p{
+				color: #fff;
+				letter-spacing: 0.5px;
+				padding: 0 50px;
+				text-align: center;
+			}
+			.mu-reservation-form{
+				margin-top: 30px;
+				text-align: center;
+
+				.form-control{
+					margin-bottom: 20px;
+				}
+
+				input[type="text"],
+				input[type="email"]{						
+					border-radius: 0;
+					color: #000;
+					height: 40px;
+					&:focus{
+						box-shadow: none;
+					}
+					&::-webkit-input-placeholder {
+					   color: #555;
+					}
+
+					&:-moz-placeholder { // Firefox 18-
+					   color: #555;
+					}
+
+					&::-moz-placeholder {  // Firefox 19+
+					  color: #555;  
+					}
+
+					&:-ms-input-placeholder {  
+					   color: #555; 
+					}
+				}
+				select{
+					border-radius: 0;
+					height: 40px;					
+					&:focus{
+						box-shadow: none;
+					}
+					option{
+						margin-bottom: 10px;
+						color: #000;
+					}
+				}
+				textarea{
+					border-radius: 0;
+					color: #000;
+					padding: 10px;
+					&:focus{
+						box-shadow: none;
+					}
+					&::-webkit-input-placeholder {
+					   color: #555;
+					}
+
+					&:-moz-placeholder { // Firefox 18-
+					   color: #555;
+					}
+
+					&::-moz-placeholder {  // Firefox 19+
+					  color: #555;  
+					}
+
+					&:-ms-input-placeholder {  
+					   color: #555; 
+					}
+				}
+				button[type="submit"]{
+					border: none;
+					margin-top: 20px;
+					margin-left: 15px;
+				}
+				
+			}
+		}
+	}
+}
+.datepicker {
+  border-radius: 0;					 
+  padding: 6px 10px;
+}
+.datepicker .datepicker-switch, .datepicker .prev, .datepicker .next, .datepicker tfoot tr th { 
+  font-size: 20px;
+}
+.table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
+  padding: 6px;
+}
+.datepicker table tr td.day:hover{	
+	color: #fff;
+}
+
+</style>
+
+
 <!-- Start Reservation section -->
 <section id="mu-reservation">
     <div class="container">
